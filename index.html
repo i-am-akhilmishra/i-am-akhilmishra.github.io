@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhil Mishra | Lead DevOps Engineer</title>
+  <meta name="description" content="Akhil Mishra – Microsoft Certified Lead DevOps Engineer with 8+ years in cloud-native solutions, CI/CD, Kubernetes, and Azure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise"></div>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certs</a>
+      <a href="#contact">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, World! 👋</p>
+      <h1 class="hero-name">Akhil <span class="accent">Mishra</span></h1>
+      <div class="hero-typewriter">
+        <span class="tw-prefix">I am a </span>
+        <span class="tw-text" id="typewriter"></span>
+        <span class="tw-cursor">|</span>
+      </div>
+      <p class="hero-sub">8+ years crafting cloud-native solutions · Bengaluru, India</p>
+      <div class="hero-badges">
+        <span class="badge"><img src="https://img.shields.io/badge/Azure-DevOps%20Expert-0078D4?logo=microsoftazure&logoColor=white&style=flat-square" alt="Azure DevOps Expert" /></span>
+        <span class="badge"><img src="https://img.shields.io/badge/Kubernetes-Certified-326CE5?logo=kubernetes&logoColor=white&style=flat-square" alt="Kubernetes" /></span>
+        <span class="badge"><img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white&style=flat-square" alt="Terraform" /></span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="#experience" class="btn btn-ghost">View Work</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-avatar">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-initials">AM</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Tools Mastered</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-heading">Bridging Dev &amp; Ops <span class="accent">at Scale</span></h2>
+          <p>I'm a <strong>Microsoft Certified Lead DevOps Engineer</strong> passionate about building efficient, scalable, and resilient systems. With 8+ years of hands-on experience, I specialize in designing CI/CD pipelines, architecting cloud-native Kubernetes platforms, and implementing DevSecOps practices.</p>
+          <p>Currently at <strong>NTT DATA</strong>, I lead the design and operation of AKS clusters, enforce security across pipelines, and drive engineering excellence for enterprise cloud workloads.</p>
+          <ul class="about-highlights">
+            <li>☁️ Azure &amp; GCP Cloud Architecture</li>
+            <li>♾ CI/CD Pipeline Design (Jenkins · Azure DevOps · GitHub Actions)</li>
+            <li>☸ Kubernetes &amp; Service Mesh (Istio · Linkerd)</li>
+            <li>🛡 DevSecOps (Fortify · SonarQube · Trivy · Mend)</li>
+            <li>⚙ Infrastructure as Code (Terraform · Ansible)</li>
+            <li>📊 Observability (Prometheus · Grafana · Jaeger)</li>
+          </ul>
+          <div class="about-links">
+            <a href="mailto:akhilmishra40@gmail.com" class="chip">✉ akhilmishra40@gmail.com</a>
+            <a href="https://www.linkedin.com/in/i-am-akhilmishra" target="_blank" rel="noopener noreferrer" class="chip">💼 LinkedIn</a>
+            <a href="tel:+918240243630" class="chip">📞 +91 82402 43630</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills &amp; Tools</div>
+      <h2 class="section-heading">My <span class="accent">Tech Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-delay="0">
+          <div class="skill-cat-icon">☁</div>
+          <h3>Cloud Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Microsoft Azure</span>
+            <span class="skill-tag level-expert">Azure AKS</span>
+            <span class="skill-tag level-advanced">Google Cloud (GCP)</span>
+            <span class="skill-tag level-advanced">GKE</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="100">
+          <div class="skill-cat-icon">♾</div>
+          <h3>CI/CD &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Azure DevOps</span>
+            <span class="skill-tag level-expert">GitHub Actions</span>
+            <span class="skill-tag level-expert">Jenkins</span>
+            <span class="skill-tag level-advanced">Harness</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="200">
+          <div class="skill-cat-icon">☸</div>
+          <h3>Containers &amp; Orchestration</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Kubernetes</span>
+            <span class="skill-tag level-expert">Docker</span>
+            <span class="skill-tag level-advanced">Helm</span>
+            <span class="skill-tag level-advanced">OpenShift</span>
+            <span class="skill-tag level-advanced">Istio</span>
+            <span class="skill-tag level-intermediate">Linkerd</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="300">
+          <div class="skill-cat-icon">⚙</div>
+          <h3>Infrastructure as Code</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Terraform</span>
+            <span class="skill-tag level-advanced">Ansible</span>
+            <span class="skill-tag level-intermediate">ARM Templates</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="400">
+          <div class="skill-cat-icon">🛡</div>
+          <h3>DevSecOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Fortify SAST</span>
+            <span class="skill-tag level-expert">SonarQube</span>
+            <span class="skill-tag level-expert">Trivy</span>
+            <span class="skill-tag level-advanced">Mend (SCA)</span>
+            <span class="skill-tag level-advanced">SonarQube DAST</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="500">
+          <div class="skill-cat-icon">📊</div>
+          <h3>Observability</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Prometheus</span>
+            <span class="skill-tag level-expert">Grafana</span>
+            <span class="skill-tag level-advanced">Azure Monitor</span>
+            <span class="skill-tag level-advanced">Log Analytics</span>
+            <span class="skill-tag level-intermediate">Jaeger</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="600">
+          <div class="skill-cat-icon">🖥</div>
+          <h3>OS &amp; Scripting</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Linux (Ubuntu)</span>
+            <span class="skill-tag level-expert">PowerShell</span>
+            <span class="skill-tag level-advanced">Python</span>
+            <span class="skill-tag level-advanced">Bash</span>
+            <span class="skill-tag level-expert">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="700">
+          <div class="skill-cat-icon">🔐</div>
+          <h3>Identity &amp; Security</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">IAM</span>
+            <span class="skill-tag level-expert">CyberArk PAM</span>
+            <span class="skill-tag level-advanced">Azure Key Vault</span>
+            <span class="skill-tag level-advanced">RBAC</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="skill-legend">
+        <span><span class="dot-legend expert"></span> Expert</span>
+        <span><span class="dot-legend advanced"></span> Advanced</span>
+        <span><span class="dot-legend intermediate"></span> Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label">03 — Experience</div>
+      <h2 class="section-heading">Where I've <span class="accent">Worked</span></h2>
+      <div class="timeline">
+
+        <!-- NTT DATA -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">NTT DATA North America</span>
+              <span class="timeline-period">Apr 2025 – Present · 1 yr</span>
+            </div>
+            <h3 class="timeline-role">Digital Engineering Lead Engineer</h3>
+            <span class="timeline-location">📍 Bengaluru, Karnataka, India</span>
+            <ul class="timeline-bullets">
+              <li>Gather and analyze stakeholder requirements to design scalable, secure cloud-native architectures aligned with org goals.</li>
+              <li>Design, deploy, and operate <strong>Azure Kubernetes Service (AKS)</strong> clusters with focus on HA, scalability, and security.</li>
+              <li>Build and maintain <strong>CI/CD pipelines</strong> using Azure DevOps, GitHub Actions, and Jenkins.</li>
+              <li>Implement <strong>service mesh</strong> solutions (Istio, Linkerd) for advanced traffic management, mTLS security, and observability.</li>
+              <li>Lead incident analysis and remediation, improving platform stability and operational excellence.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AKS</span><span>Istio</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kimberley Consulting -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Kimberley Consulting Pte Ltd</span>
+              <span class="timeline-period">May 2025 – Oct 2025 · 6 mos</span>
+            </div>
+            <h3 class="timeline-role">Cloud Platform Engineer</h3>
+            <span class="timeline-location">📍 India</span>
+            <ul class="timeline-bullets">
+              <li>Led end-to-end data and infrastructure <strong>migration from GCP to Azure</strong> ensuring minimal downtime and data integrity.</li>
+              <li>Set up Dev, QA, Performance, Production, and DR environments with consistent security standards.</li>
+              <li>Managed <strong>Kubernetes deployments using Helm charts</strong>, including upgrades, rollbacks, and environment-specific configs.</li>
+              <li>Implemented and maintained CI/CD pipelines via GitHub Actions and Azure DevOps.</li>
+              <li>Performed controlled traffic cutover (flip) from GCP to Azure, ensuring seamless service continuity.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>GCP→Azure Migration</span><span>Helm</span><span>Kubernetes</span><span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RedHat -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Red Hat</span>
+              <span class="timeline-period">Jun 2025 – Aug 2025 · 3 mos</span>
+            </div>
+            <h3 class="timeline-role">Sr. DevOps Engineer</h3>
+            <span class="timeline-location">📍 India</span>
+            <ul class="timeline-bullets">
+              <li>Designed automated workflows to provision and manage Azure infrastructure using <strong>Terraform</strong>, including AKS clusters, control planes, and node pools.</li>
+              <li>Developed <strong>Terraform modules</strong> for VNets, Subnets, Key Vaults, PostgreSQL, and other platform services.</li>
+              <li>Integrated <strong>Fortify SAST, SonarQube DAST, Trivy, and Mend (SCA)</strong> for automated vulnerability detection in CI/CD.</li>
+              <li>Managed and secured Terraform backend and state files per DevSecOps best practices.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Terraform</span><span>DevSecOps</span><span>Fortify</span><span>SonarQube</span><span>Trivy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cognizant DevSecOps -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Cognizant</span>
+              <span class="timeline-period">May 2021 – Apr 2025 · 4 yrs</span>
+            </div>
+            <h3 class="timeline-role">DevSecOps Engineer</h3>
+            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
+            <ul class="timeline-bullets">
+              <li>Implemented fully automated Dev, Staging, and Production environments with weekly/monthly UAT &amp; PROD deployments.</li>
+              <li><strong>Reduced release time from 3 months to 7 days</strong> by improving DevOps collaboration and pipeline automation.</li>
+              <li>Created CI/CD pipelines from scratch using YAML with stages for building, testing, and deploying applications.</li>
+              <li>Implemented Azure Monitor, Log Analytics, and Application Insights for comprehensive monitoring.</li>
+              <li>Managed and maintained <strong>AKS clusters</strong>; monitored with Prometheus and Grafana.</li>
+              <li>Created Function App infrastructure using Terraform and deployed across all environments adhering to DevSecOps principles.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Azure DevOps</span><span>AKS</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cognizant Cyber Security -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Cognizant</span>
+              <span class="timeline-period">Jan 2019 – Apr 2021 · 2 yrs 4 mos</span>
+            </div>
+            <h3 class="timeline-role">Cyber Security Consultant</h3>
+            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
+            <ul class="timeline-bullets">
+              <li>Managed IAM operations including application patching, upgrades, and certificate management for enterprise clients.</li>
+              <li>Managed <strong>PAM account creation</strong>, access provisioning, access control, and user onboarding/termination.</li>
+              <li>Led a team of <strong>17 members</strong> ensuring smooth shift operations and service delivery.</li>
+              <li>Utilized SNOW dashboards to generate SDC and SLA reports; ensured SLA compliance with cross-functional teams.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>IAM</span><span>CyberArk PAM</span><span>SNOW</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cognizant PA + Trainee -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Cognizant</span>
+              <span class="timeline-period">Nov 2017 – Jun 2019 · 1 yr 8 mos</span>
+            </div>
+            <h3 class="timeline-role">Programmer Analyst (Trainee → Analyst)</h3>
+            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
+            <ul class="timeline-bullets">
+              <li>Started career as Programmer Analyst Trainee (Nov 2017) progressing to Programming Analyst (Nov 2018).</li>
+              <li>Gained foundational skills in programming, system configuration, and enterprise IT operations.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Programming</span><span>IT Operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-label">04 — Certifications</div>
+      <h2 class="section-heading">Industry <span class="accent">Certifications</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card" data-delay="0">
+          <div class="cert-logo azure">
+            <svg width="36" height="36" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.32 3.999l-23.6 40.707 20.08 35.295H72.36L96 80.001 33.32 3.999z" fill="#0078D4"/><path d="M55.44 3.999L33.32 66.664 20.08 79.998H0L44.32 3.999h11.12z" fill="#50E6FF"/></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Microsoft Certified</h3>
+            <p>DevOps Engineer Expert</p>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+          <div class="cert-badge expert">Expert</div>
+        </div>
+
+        <div class="cert-card" data-delay="100">
+          <div class="cert-logo azure">
+            <svg width="36" height="36" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.32 3.999l-23.6 40.707 20.08 35.295H72.36L96 80.001 33.32 3.999z" fill="#0078D4"/><path d="M55.44 3.999L33.32 66.664 20.08 79.998H0L44.32 3.999h11.12z" fill="#50E6FF"/></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Microsoft Certified</h3>
+            <p>Azure Administrator Associate</p>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+          <div class="cert-badge associate">Associate</div>
+        </div>
+
+        <div class="cert-card" data-delay="200">
+          <div class="cert-logo harness">
+            <svg width="36" height="36" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#00ade4"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Inter">H</text></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Harness Certified</h3>
+            <p>Continuous Delivery &amp; GitOps Developer</p>
+            <span class="cert-issuer">Harness</span>
+          </div>
+          <div class="cert-badge developer">Developer</div>
+        </div>
+
+        <div class="cert-card" data-delay="300">
+          <div class="cert-logo harness">
+            <svg width="36" height="36" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#00ade4"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Inter">H</text></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Harness Certified</h3>
+            <p>Continuous Integration Developer</p>
+            <span class="cert-issuer">Harness</span>
+          </div>
+          <div class="cert-badge developer">Developer</div>
+        </div>
+
+        <div class="cert-card" data-delay="400">
+          <div class="cert-logo harness">
+            <svg width="36" height="36" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="#00ade4"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Inter">H</text></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Harness Certified</h3>
+            <p>Infrastructure as Code Management Developer</p>
+            <span class="cert-issuer">Harness</span>
+          </div>
+          <div class="cert-badge developer">Developer</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-label">05 — Education</div>
+      <h2 class="section-heading">Academic <span class="accent">Background</span></h2>
+      <div class="edu-card" data-aos>
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3>Bachelor of Computer Application</h3>
+          <p class="edu-field">Computer Programming</p>
+          <p class="edu-college">The Calcutta Anglo Gujarati College</p>
+          <span class="edu-period">May 2014 – July 2017</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-heading">Let's <span class="accent">Connect</span></h2>
+      <p class="contact-intro">Open to discussing new opportunities, sharing insights, or networking within the DevOps community.</p>
+      <div class="contact-grid">
+        <a href="mailto:akhilmishra40@gmail.com" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <div>
+            <h4>Email</h4>
+            <p>akhilmishra40@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+918240243630" class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 82402 43630</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/i-am-akhilmishra" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>i-am-akhilmishra</p>
+          </div>
+        </a>
+        <div class="contact-card info-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>Bengaluru, Karnataka, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built with ❤ by <strong>Akhil Mishra</strong></p>
+      <p class="footer-sub">© 2026 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
