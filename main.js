@@ -275,8 +275,8 @@ const io = new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) return;
     const el = entry.target;
 
-    // Skill cards stagger
-    if (el.classList.contains("skill-category")) {
+    // Pipeline stage cards stagger
+    if (el.classList.contains("pl-stage")) {
       const delay = parseInt(el.dataset.delay || 0, 10);
       setTimeout(() => el.classList.add("visible"), delay);
     }
@@ -301,7 +301,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll(
-  ".skill-category, .timeline-item, .cert-card, .edu-card, .stat-number"
+  ".pl-stage, .timeline-item, .cert-card, .edu-card, .stat-number"
 ).forEach(el => io.observe(el));
 
 // ==================== SMOOTH SECTION HIGHLIGHT (NAV) ====================

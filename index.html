@@ -139,100 +139,173 @@
     <div class="container">
       <div class="section-label">02 — Skills &amp; Tools</div>
       <h2 class="section-heading">My <span class="accent">Tech Stack</span></h2>
-      <div class="skills-grid">
 
-        <div class="skill-category" data-delay="0">
-          <div class="skill-cat-icon">☁</div>
-          <h3>Cloud Platforms</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Microsoft Azure</span>
-            <span class="skill-tag level-expert">AWS</span>
-            <span class="skill-tag level-advanced">Google Cloud (GCP)</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="100">
-          <div class="skill-cat-icon">♾</div>
-          <h3>CI/CD &amp; DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Azure DevOps</span>
-            <span class="skill-tag level-expert">GitHub Actions</span>
-            <span class="skill-tag level-expert">Jenkins</span>
-            <span class="skill-tag level-advanced">Harness</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="200">
-          <div class="skill-cat-icon">☸</div>
-          <h3>Containers &amp; Orchestration</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Kubernetes</span>
-            <span class="skill-tag level-expert">Docker</span>
-            <span class="skill-tag level-advanced">Helm</span>
-            <span class="skill-tag level-advanced">OpenShift</span>
-            <span class="skill-tag level-advanced">Istio</span>
-            <span class="skill-tag level-intermediate">Linkerd</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="300">
-          <div class="skill-cat-icon">⚙</div>
-          <h3>Infrastructure as Code</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Terraform</span>
-            <span class="skill-tag level-advanced">Ansible</span>
-            <span class="skill-tag level-intermediate">ARM Templates</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="400">
-          <div class="skill-cat-icon">🛡</div>
-          <h3>DevSecOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Fortify SAST</span>
-            <span class="skill-tag level-expert">SonarQube</span>
-            <span class="skill-tag level-expert">Trivy</span>
-            <span class="skill-tag level-advanced">Mend (SCA)</span>
-            <span class="skill-tag level-advanced">SonarQube DAST</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="500">
-          <div class="skill-cat-icon">📊</div>
-          <h3>Observability</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Prometheus</span>
-            <span class="skill-tag level-expert">Grafana</span>
-            <span class="skill-tag level-advanced">Azure Monitor</span>
-            <span class="skill-tag level-advanced">Log Analytics</span>
-            <span class="skill-tag level-intermediate">Jaeger</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="600">
-          <div class="skill-cat-icon">🖥</div>
-          <h3>OS &amp; Scripting</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">Linux (Ubuntu)</span>
-            <span class="skill-tag level-expert">PowerShell</span>
-            <span class="skill-tag level-advanced">Python</span>
-            <span class="skill-tag level-advanced">Bash</span>
-            <span class="skill-tag level-expert">Git</span>
-          </div>
-        </div>
-
-        <div class="skill-category" data-delay="700">
-          <div class="skill-cat-icon">🔐</div>
-          <h3>Identity &amp; Security</h3>
-          <div class="skill-tags">
-            <span class="skill-tag level-expert">IAM</span>
-            <span class="skill-tag level-expert">CyberArk PAM</span>
-            <span class="skill-tag level-advanced">Azure Key Vault</span>
-            <span class="skill-tag level-advanced">RBAC</span>
-          </div>
-        </div>
-
+      <!-- Pipeline Run Header -->
+      <div class="pipeline-run-bar">
+        <span class="prb-trigger">&#9654;</span>
+        <span class="prb-name">akhil-devops-pipeline</span>
+        <span class="prb-sep">·</span>
+        <span class="prb-branch">&#9135; main</span>
+        <span class="prb-sep">·</span>
+        <span class="prb-run">Run #247</span>
+        <span class="prb-flex"></span>
+        <span class="prb-dur">&#9201; 8 yrs</span>
+        <span class="prb-status">&#10003; All Stages Passed</span>
       </div>
+
+      <!-- Scrollable Pipeline Track -->
+      <div class="pipeline-scroll">
+        <div class="pipeline-track">
+
+          <!-- STAGE 01: INFRA -->
+          <div class="pl-stage" data-delay="0">
+            <div class="pl-stage-head">
+              <span class="pl-num">01</span>
+              <span class="pl-icon">&#9881;</span>
+              <span class="pl-name">INFRA</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Infrastructure as Code</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Terraform</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Ansible</span></div>
+              <div class="pl-job"><span class="pl-dot intermediate"></span><span>ARM Templates</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 02: CLOUD -->
+          <div class="pl-stage" data-delay="80">
+            <div class="pl-stage-head">
+              <span class="pl-num">02</span>
+              <span class="pl-icon">&#9729;</span>
+              <span class="pl-name">CLOUD</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Cloud Platforms</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Microsoft Azure</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>AWS</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Google Cloud (GCP)</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 03: CONTAINERS -->
+          <div class="pl-stage" data-delay="160">
+            <div class="pl-stage-head">
+              <span class="pl-num">03</span>
+              <span class="pl-icon">&#9784;</span>
+              <span class="pl-name">CONTAINERS</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Orchestration</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Kubernetes</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Docker</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Helm</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>OpenShift</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Istio</span></div>
+              <div class="pl-job"><span class="pl-dot intermediate"></span><span>Linkerd</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 04: CI/CD -->
+          <div class="pl-stage" data-delay="240">
+            <div class="pl-stage-head">
+              <span class="pl-num">04</span>
+              <span class="pl-icon">&#9854;</span>
+              <span class="pl-name">CI / CD</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">DevOps Pipelines</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Azure DevOps</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>GitHub Actions</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Jenkins</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Harness</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 05: SECURITY -->
+          <div class="pl-stage" data-delay="320">
+            <div class="pl-stage-head">
+              <span class="pl-num">05</span>
+              <span class="pl-icon">&#128737;</span>
+              <span class="pl-name">SECURITY</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">DevSecOps</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Fortify SAST</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>SonarQube</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Trivy</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Mend (SCA)</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>DAST</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 06: OBSERVE -->
+          <div class="pl-stage" data-delay="400">
+            <div class="pl-stage-head">
+              <span class="pl-num">06</span>
+              <span class="pl-icon">&#128202;</span>
+              <span class="pl-name">OBSERVE</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Observability</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Prometheus</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Grafana</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Azure Monitor</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Log Analytics</span></div>
+              <div class="pl-job"><span class="pl-dot intermediate"></span><span>Jaeger</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 07: OS / CLI -->
+          <div class="pl-stage" data-delay="480">
+            <div class="pl-stage-head">
+              <span class="pl-num">07</span>
+              <span class="pl-icon">&#128187;</span>
+              <span class="pl-name">OS / CLI</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Scripting &amp; OS</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Linux</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>PowerShell</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>Git</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Python</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Bash</span></div>
+            </div>
+          </div>
+          <div class="pl-arrow"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <!-- STAGE 08: ACCESS -->
+          <div class="pl-stage" data-delay="560">
+            <div class="pl-stage-head">
+              <span class="pl-num">08</span>
+              <span class="pl-icon">&#128274;</span>
+              <span class="pl-name">ACCESS</span>
+              <span class="pl-pass">&#10003;</span>
+            </div>
+            <div class="pl-stage-sub">Identity &amp; Security</div>
+            <div class="pl-jobs">
+              <div class="pl-job"><span class="pl-dot expert"></span><span>IAM</span></div>
+              <div class="pl-job"><span class="pl-dot expert"></span><span>CyberArk PAM</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>Azure Key Vault</span></div>
+              <div class="pl-job"><span class="pl-dot advanced"></span><span>RBAC</span></div>
+            </div>
+          </div>
+
+        </div><!-- /pipeline-track -->
+      </div><!-- /pipeline-scroll -->
+
       <div class="skill-legend">
         <span><span class="dot-legend expert"></span> Expert</span>
         <span><span class="dot-legend advanced"></span> Advanced</span>
