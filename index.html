@@ -46,23 +46,36 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <canvas id="heroCanvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, World! 👋</p>
-      <h1 class="hero-name">Akhil <span class="accent">Mishra</span></h1>
-      <div class="hero-typewriter">
-        <span class="tw-prefix">I am a </span>
-        <span class="tw-text" id="typewriter"></span>
-        <span class="tw-cursor">|</span>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, World! 👋</p>
+        <h1 class="hero-name">Akhil <span class="accent">Mishra</span></h1>
+        <div class="hero-typewriter">
+          <span class="tw-prefix">I am a </span>
+          <span class="tw-text" id="typewriter"></span>
+          <span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-sub">8+ years crafting cloud-native solutions · Bengaluru, India</p>
+        <div class="hero-badges">
+          <span class="badge"><img src="https://img.shields.io/badge/Azure-DevOps%20Expert-0078D4?logo=microsoftazure&logoColor=white&style=flat-square" alt="Azure DevOps Expert" /></span>
+          <span class="badge"><img src="https://img.shields.io/badge/Kubernetes-Certified-326CE5?logo=kubernetes&logoColor=white&style=flat-square" alt="Kubernetes" /></span>
+          <span class="badge"><img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white&style=flat-square" alt="Terraform" /></span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#experience" class="btn btn-ghost">View Work</a>
+        </div>
       </div>
-      <p class="hero-sub">8+ years crafting cloud-native solutions · Bengaluru, India</p>
-      <div class="hero-badges">
-        <span class="badge"><img src="https://img.shields.io/badge/Azure-DevOps%20Expert-0078D4?logo=microsoftazure&logoColor=white&style=flat-square" alt="Azure DevOps Expert" /></span>
-        <span class="badge"><img src="https://img.shields.io/badge/Kubernetes-Certified-326CE5?logo=kubernetes&logoColor=white&style=flat-square" alt="Kubernetes" /></span>
-        <span class="badge"><img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white&style=flat-square" alt="Terraform" /></span>
-      </div>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-        <a href="#experience" class="btn btn-ghost">View Work</a>
+      <div class="hero-visual">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-outer">
+          <div class="hero-photo-spinner"></div>
+          <div class="hero-photo-inner">
+            <img src="Portfolio_image.jpg" alt="Akhil Mishra" class="hero-photo" />
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero-scroll">
@@ -78,9 +91,11 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="about-avatar">
-            <div class="avatar-ring ring-1"></div>
-            <div class="avatar-ring ring-2"></div>
-            <img src="Portfolio_image.jpg" alt="Akhil Mishra" class="avatar-photo" />
+            <div class="avatar-glow"></div>
+            <div class="avatar-spinner"></div>
+            <div class="avatar-photo-inner">
+              <img src="Portfolio_image.jpg" alt="Akhil Mishra" class="avatar-photo" />
+            </div>
           </div>
           <div class="about-stats">
             <div class="stat-card">
