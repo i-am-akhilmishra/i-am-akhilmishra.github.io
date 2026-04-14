@@ -322,10 +322,10 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 .about { background: var(--bg-2); }
 
 .about-grid {
-  display: grid; grid-template-columns: 1fr 1.8fr; gap: 64px; align-items: start;
+  display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start;
 }
 
-.about-visual { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.about-visual { display: flex; flex-direction: row; align-items: center; gap: 16px; }
 
 .about-avatar {
   position: relative; width: 220px; height: 220px;
@@ -361,12 +361,12 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 @keyframes spin { from { transform: rotate(0deg) } to { transform: rotate(360deg) } }
 
 .about-stats {
-  display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
-  width: 100%;
+  display: flex; gap: 16px; flex-wrap: wrap;
+  margin-bottom: 36px;
 }
 .stat-card {
   background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 16px 12px; text-align: center;
+  padding: 20px 28px; text-align: center; flex: 1; min-width: 100px;
   transition: border-color var(--transition);
 }
 .stat-card:hover { border-color: var(--accent); }
@@ -655,9 +655,8 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 
   .hero-name { font-size: clamp(2.8rem, 12vw, 4rem); }
 
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-visual { flex-direction: row; flex-wrap: wrap; justify-content: center; }
-  .about-stats { grid-template-columns: repeat(3,1fr); }
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-stats { gap: 10px; }
 
   .skills-grid { grid-template-columns: 1fr; }
 
