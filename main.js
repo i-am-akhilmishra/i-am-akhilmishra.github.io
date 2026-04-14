@@ -65,7 +65,7 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
   const ctx = canvas.getContext("2d");
 
   let W, H, particles = [];
-  const COLORS = ["#ff8c00", "#ffb347", "#e67300", "#ffd280", "#ff6b35"];
+  const COLORS = ["#d4af37", "#f5c842", "#b8962e", "#ffd700", "#e8c84a"];
 
   function resize() {
     W = canvas.width  = canvas.offsetWidth;
@@ -115,7 +115,7 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = "#ff8c00";
+          ctx.strokeStyle = "#d4af37";
           ctx.globalAlpha = (1 - dist / threshold) * 0.09;
           ctx.lineWidth = 0.5;
           ctx.stroke();
