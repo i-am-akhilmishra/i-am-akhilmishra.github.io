@@ -2,19 +2,19 @@
    ROOT & RESET
    ============================================================ */
 :root {
-  --bg:         #07060f;
-  --bg-2:       #0d0b1c;
-  --bg-card:    #131028;
-  --border:     rgba(167, 139, 250, 0.13);
-  --accent:     #a78bfa;
-  --accent-2:   #22d3ee;
-  --accent-glow:rgba(167, 139, 250, 0.3);
+  --bg:         #111418;
+  --bg-2:       #161b22;
+  --bg-card:    #1a2029;
+  --border:     rgba(0, 217, 126, 0.13);
+  --accent:     #00d97e;
+  --accent-2:   #00b36b;
+  --accent-glow:rgba(0, 217, 126, 0.28);
   --text:       #e2e8f0;
   --text-muted: #94a3b8;
-  --text-faint: #4b5680;
-  --green:      #34d399;
+  --text-faint: #4a5568;
+  --green:      #00d97e;
   --warning:    #fbbf24;
-  --gradient:   linear-gradient(135deg, #8b5cf6, #22d3ee);
+  --gradient:   linear-gradient(135deg, #00b36b, #00d97e);
   --radius:     12px;
   --radius-lg:  20px;
   --shadow:     0 8px 32px rgba(0, 0, 0, 0.55);
@@ -116,7 +116,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
   transition: background var(--transition), box-shadow var(--transition);
 }
 .nav.scrolled {
-  background: rgba(7, 6, 15, 0.88);
+  background: rgba(17, 20, 24, 0.92);
   backdrop-filter: blur(24px);
   box-shadow: 0 1px 0 var(--border);
 }
@@ -149,7 +149,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 
 .mobile-menu {
   display: none; flex-direction: column;
-  background: rgba(7,6,15,0.97); backdrop-filter: blur(24px);
+  background: rgba(17,20,24,0.97); backdrop-filter: blur(24px);
   padding: 20px 24px; gap: 6px;
   border-bottom: 1px solid var(--border);
 }
@@ -185,12 +185,12 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 }
 .blob-1 {
   width: 640px; height: 640px; left: -160px; top: 0;
-  background: radial-gradient(circle, rgba(139,92,246,0.22) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(0,217,126,0.18) 0%, transparent 65%);
   animation: blobPulse 12s ease-in-out infinite;
 }
 .blob-2 {
   width: 520px; height: 520px; right: -100px; bottom: -60px;
-  background: radial-gradient(circle, rgba(34,211,238,0.14) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(0,179,107,0.12) 0%, transparent 65%);
   animation: blobPulse 12s ease-in-out infinite reverse;
   animation-delay: -6s;
 }
@@ -256,7 +256,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 .hero-photo-glow {
   position: absolute;
   width: 360px; height: 360px; border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(139,92,246,0.45), rgba(34,211,238,0.3), rgba(139,92,246,0.45));
+  background: conic-gradient(from 0deg, rgba(0,217,126,0.45), rgba(0,179,107,0.3), rgba(0,217,126,0.45));
   filter: blur(56px);
   opacity: 0.75; transform: scale(1.45);
   animation: glowPulse 4s ease-in-out infinite;
@@ -273,7 +273,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 }
 .hero-photo-spinner {
   position: absolute; inset: -4px; border-radius: 50%;
-  background: conic-gradient(from 0deg, #8b5cf6, #22d3ee, #c084fc, #06b6d4, #8b5cf6);
+  background: conic-gradient(from 0deg, #00d97e, #005c38, #00b36b, #00ff96, #00d97e);
   animation: spin 5s linear infinite;
 }
 .hero-photo-inner {
@@ -300,7 +300,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
   border: 1px solid var(--border); color: var(--text);
   background: rgba(255,255,255,0.03);
 }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(167,139,250,0.06); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,217,126,0.06); }
 
 .hero-scroll {
   position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
@@ -334,7 +334,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 
 .avatar-glow {
   position: absolute; inset: 0; border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(139,92,246,0.55), rgba(34,211,238,0.4), rgba(139,92,246,0.55));
+  background: conic-gradient(from 0deg, rgba(0,217,126,0.55), rgba(0,179,107,0.4), rgba(0,217,126,0.55));
   filter: blur(24px);
   opacity: 0.9; transform: scale(1.35);
   z-index: 0;
@@ -342,7 +342,7 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 
 .avatar-spinner {
   position: absolute; inset: -3px; border-radius: 50%;
-  background: conic-gradient(from 0deg, #8b5cf6, #22d3ee, #c084fc, #8b5cf6);
+  background: conic-gradient(from 0deg, #00d97e, #005c38, #00b36b, #00d97e);
   animation: spin 5s linear infinite;
   z-index: 1;
 }
@@ -388,10 +388,10 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
   color: var(--text-muted); font-size: 0.95rem;
   padding: 8px 12px; border-radius: 8px;
   border-left: 2px solid var(--accent);
-  background: rgba(139,92,246,0.05);
+  background: rgba(0,217,126,0.04);
   transition: background var(--transition);
 }
-.about-highlights li:hover { background: rgba(139,92,246,0.1); }
+.about-highlights li:hover { background: rgba(0,217,126,0.09); }
 
 .about-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .chip {
@@ -438,9 +438,9 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
   font-size: 0.78rem; font-weight: 500; font-family: var(--mono);
   border: 1px solid transparent;
 }
-.skill-tag.level-expert     { background: rgba(167,139,250,0.12); border-color: rgba(167,139,250,0.35); color: #a78bfa; }
-.skill-tag.level-advanced   { background: rgba(34,211,238,0.1);   border-color: rgba(34,211,238,0.3);   color: #22d3ee; }
-.skill-tag.level-intermediate{ background: rgba(99,102,241,0.1);  border-color: rgba(99,102,241,0.3);   color: #818cf8; }
+.skill-tag.level-expert      { background: rgba(0,217,126,0.1);   border-color: rgba(0,217,126,0.35);  color: #00d97e; }
+.skill-tag.level-advanced    { background: rgba(0,179,107,0.1);   border-color: rgba(0,179,107,0.3);   color: #00b36b; }
+.skill-tag.level-intermediate{ background: rgba(52,211,153,0.1);  border-color: rgba(52,211,153,0.3);  color: #34d399; }
 
 .skill-legend {
   display: flex; gap: 24px; justify-content: center;
@@ -449,9 +449,9 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 .dot-legend {
   display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px;
 }
-.dot-legend.expert     { background: #a78bfa; }
-.dot-legend.advanced   { background: #22d3ee; }
-.dot-legend.intermediate { background: #818cf8; }
+.dot-legend.expert       { background: #00d97e; }
+.dot-legend.advanced     { background: #00b36b; }
+.dot-legend.intermediate { background: #34d399; }
 
 /* ============================================================
    EXPERIENCE / TIMELINE
@@ -519,8 +519,8 @@ body.hovering .cursor-ring { width: 56px; height: 56px; opacity: 0.25; }
 .timeline-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .timeline-tags span {
   padding: 3px 10px; border-radius: 4px;
-  background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.3);
-  font-size: 0.76rem; font-family: var(--mono); color: #a78bfa;
+  background: rgba(0,179,107,0.1); border: 1px solid rgba(0,179,107,0.28);
+  font-size: 0.76rem; font-family: var(--mono); color: #00b36b;
 }
 
 /* ============================================================
