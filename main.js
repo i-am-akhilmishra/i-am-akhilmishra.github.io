@@ -310,6 +310,18 @@ document.querySelectorAll(
   ".pl-stage, .timeline-item, .cert-card, .edu-card, .stat-number, .k8s-card"
 ).forEach(el => io.observe(el));
 
+// ==================== KUBECTL DESCRIBE DRAWERS ====================
+document.querySelectorAll(".k8s-describe-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card   = btn.closest(".k8s-card");
+    const drawer = card.querySelector(".k8s-describe-drawer");
+    const isOpen = btn.classList.toggle("open");
+    btn.setAttribute("aria-expanded", isOpen);
+    drawer.classList.toggle("open", isOpen);
+    drawer.setAttribute("aria-hidden", !isOpen);
+  });
+});
+
 // ==================== VISITOR COUNTER ====================
 (function initVisitorCounter() {
   const countEl = document.getElementById("visitorCount");
