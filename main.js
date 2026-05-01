@@ -23,7 +23,7 @@ if (window.matchMedia("(pointer: fine)").matches) {
     requestAnimationFrame(animateRing);
   })();
 
-  document.querySelectorAll("a, button, .skill-category, .cert-card, .contact-card").forEach(el => {
+  document.querySelectorAll("a, button, .skill-category, .cert-flip, .contact-card").forEach(el => {
     el.addEventListener("mouseenter", () => document.body.classList.add("hovering"));
     el.addEventListener("mouseleave", () => document.body.classList.remove("hovering"));
   });
@@ -138,8 +138,8 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
       // Label
       const fs = Math.max(8, this.size * 0.58);
       ctx.font = `600 ${fs}px "JetBrains Mono", monospace`;
-      ctx.fillStyle = "#ddf0ff";
-      ctx.globalAlpha = 0.7;
+      ctx.fillStyle = "#0f172a";
+      ctx.globalAlpha = 0.8;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(this.label, this.x, this.y);
@@ -193,8 +193,8 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = "#00d4ff";
-          ctx.globalAlpha = alpha;
+          ctx.strokeStyle = "rgba(37,99,235,0.45)";
+          ctx.globalAlpha = alpha * 1.8;
           ctx.lineWidth = 0.8;
           ctx.setLineDash([5, 9]);
           ctx.stroke();
@@ -284,8 +284,8 @@ const io = new IntersectionObserver((entries) => {
     // Timeline items
     if (el.classList.contains("timeline-item")) el.classList.add("visible");
 
-    // Cert cards stagger
-    if (el.classList.contains("cert-card")) {
+    // Cert flip cards stagger
+    if (el.classList.contains("cert-flip")) {
       const delay = parseInt(el.dataset.delay || 0, 10);
       setTimeout(() => el.classList.add("visible"), delay);
     }
@@ -307,9 +307,16 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll(
-  ".pl-stage, .timeline-item, .cert-card, .edu-card, .stat-number, .k8s-card"
+  ".pl-stage, .timeline-item, .cert-flip, .edu-card, .stat-number, .k8s-card"
 ).forEach(el => io.observe(el));
-
+// ==================== CERT FLIP CARDS ====================
+document.querySelectorAll(".cert-flip").forEach(card => {
+  card.addEventListener("click", (e) => {
+    // Don't flip when clicking links on the back
+    if (e.target.closest("a")) return;
+    card.classList.toggle("flipped");
+  });
+});
 // ==================== KUBECTL DESCRIBE DRAWERS ====================
 document.querySelectorAll(".k8s-describe-btn").forEach(btn => {
   btn.addEventListener("click", () => {
