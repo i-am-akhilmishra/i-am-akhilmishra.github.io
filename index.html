@@ -319,143 +319,298 @@
     <div class="container">
       <div class="section-label">03 — Experience</div>
       <h2 class="section-heading">Where I've <span class="accent">Worked</span></h2>
-      <div class="timeline">
+
+      <!-- Grafana-style top bar -->
+      <div class="grafana-topbar">
+        <span class="gtb-icon">📊</span>
+        <span class="gtb-title">career-dashboard</span>
+        <span class="gtb-sep">|</span>
+        <span class="gtb-range">Last 8 years</span>
+        <span class="gtb-flex"></span>
+        <span class="gtb-refresh"><span class="gtb-dot"></span> Live</span>
+      </div>
+
+      <!-- Prometheus metric row -->
+      <div class="prom-metrics">
+        <div class="prom-metric">
+          <span class="prom-metric-name">total_experience_years</span>
+          <span class="prom-metric-val">8+</span>
+        </div>
+        <div class="prom-metric">
+          <span class="prom-metric-name">employers_count</span>
+          <span class="prom-metric-val">4</span>
+        </div>
+        <div class="prom-metric">
+          <span class="prom-metric-name">deployments_delivered</span>
+          <span class="prom-metric-val">500+</span>
+        </div>
+        <div class="prom-metric">
+          <span class="prom-metric-name">release_cycle_reduction</span>
+          <span class="prom-metric-val">90%</span>
+        </div>
+        <div class="prom-metric">
+          <span class="prom-metric-name">cluster_uptime_sla</span>
+          <span class="prom-metric-val">99.9%</span>
+        </div>
+      </div>
+
+      <!-- K8s Namespace cards -->
+      <div class="k8s-grid">
 
         <!-- NTT DATA -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">NTT DATA North America</span>
-              <span class="timeline-period">Apr 2025 – Present · 1 yr</span>
+        <div class="k8s-card" data-delay="0">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">ntt-data</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status running"><span class="k8s-status-dot"></span>Running</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">Digital Engineering Lead Engineer</span>
             </div>
-            <h3 class="timeline-role">Digital Engineering Lead Engineer</h3>
-            <span class="timeline-location">📍 Bengaluru, Karnataka, India</span>
-            <ul class="timeline-bullets">
-              <li>Gather and analyze stakeholder requirements to design scalable, secure cloud-native architectures aligned with org goals.</li>
-              <li>Design, deploy, and operate <strong>Azure Kubernetes Service (AKS)</strong> clusters with focus on HA, scalability, and security.</li>
-              <li>Build and maintain <strong>CI/CD pipelines</strong> using Azure DevOps, GitHub Actions, and Jenkins.</li>
-              <li>Implement <strong>service mesh</strong> solutions (Istio, Linkerd) for advanced traffic management, mTLS security, and observability.</li>
-              <li>Lead incident analysis and remediation, improving platform stability and operational excellence.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>AKS</span><span>Istio</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Kubernetes</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">NTT DATA North America</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">Bengaluru, India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">Apr 2025 – Present · 1 yr</span>
             </div>
+            <!-- Pod grid -->
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="Design, deploy and operate AKS clusters"><span class="pod-dot"></span>aks-cluster-ops</div>
+              <div class="k8s-pod running" title="CI/CD pipelines – Azure DevOps, GitHub Actions, Jenkins"><span class="pod-dot"></span>cicd-pipeline</div>
+              <div class="k8s-pod running" title="Service mesh – Istio, Linkerd"><span class="pod-dot"></span>service-mesh</div>
+              <div class="k8s-pod running" title="Incident analysis and remediation"><span class="pod-dot"></span>incident-mgmt</div>
+              <div class="k8s-pod running" title="Cloud-native architecture design"><span class="pod-dot"></span>cloud-architect</div>
+            </div>
+            <!-- Grafana-style mini sparkline bars -->
+            <div class="k8s-graph-row">
+              <div class="k8s-graph-label">Impact</div>
+              <div class="k8s-sparkline">
+                <div class="sp-bar" style="--h:55%"></div>
+                <div class="sp-bar" style="--h:70%"></div>
+                <div class="sp-bar" style="--h:65%"></div>
+                <div class="sp-bar" style="--h:80%"></div>
+                <div class="sp-bar" style="--h:90%"></div>
+                <div class="sp-bar" style="--h:100%"></div>
+                <div class="sp-bar accent" style="--h:100%"></div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>AKS</span><span>Istio</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Kubernetes</span></div>
           </div>
         </div>
 
         <!-- Kimberley Consulting -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">Kimberley Consulting Pte Ltd</span>
-              <span class="timeline-period">May 2025 – Oct 2025 · 6 mos</span>
+        <div class="k8s-card" data-delay="100">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">kimberley-consulting</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status completed"><span class="k8s-status-dot"></span>Completed</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">Cloud Platform Engineer</span>
             </div>
-            <h3 class="timeline-role">Cloud Platform Engineer</h3>
-            <span class="timeline-location">📍 India</span>
-            <ul class="timeline-bullets">
-              <li>Led end-to-end data and infrastructure <strong>migration from GCP to Azure</strong> ensuring minimal downtime and data integrity.</li>
-              <li>Set up Dev, QA, Performance, Production, and DR environments with consistent security standards.</li>
-              <li>Managed <strong>Kubernetes deployments using Helm charts</strong>, including upgrades, rollbacks, and environment-specific configs.</li>
-              <li>Implemented and maintained CI/CD pipelines via GitHub Actions and Azure DevOps.</li>
-              <li>Performed controlled traffic cutover (flip) from GCP to Azure, ensuring seamless service continuity.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>GCP→Azure Migration</span><span>Helm</span><span>Kubernetes</span><span>GitHub Actions</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">Kimberley Consulting Pte Ltd</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">May 2025 – Oct 2025 · 6 mos</span>
             </div>
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="GCP to Azure migration"><span class="pod-dot"></span>gcp-azure-migration</div>
+              <div class="k8s-pod running" title="Kubernetes deployments with Helm charts"><span class="pod-dot"></span>helm-deployments</div>
+              <div class="k8s-pod running" title="CI/CD via GitHub Actions and Azure DevOps"><span class="pod-dot"></span>cicd-pipeline</div>
+              <div class="k8s-pod running" title="Traffic cutover from GCP to Azure"><span class="pod-dot"></span>traffic-cutover</div>
+              <div class="k8s-pod running" title="Multi-env setup: Dev/QA/Perf/Prod/DR"><span class="pod-dot"></span>env-management</div>
+            </div>
+            <div class="k8s-graph-row">
+              <div class="k8s-graph-label">Impact</div>
+              <div class="k8s-sparkline">
+                <div class="sp-bar" style="--h:60%"></div>
+                <div class="sp-bar" style="--h:75%"></div>
+                <div class="sp-bar" style="--h:85%"></div>
+                <div class="sp-bar" style="--h:78%"></div>
+                <div class="sp-bar" style="--h:92%"></div>
+                <div class="sp-bar accent" style="--h:95%"></div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>GCP→Azure</span><span>Helm</span><span>Kubernetes</span><span>GitHub Actions</span></div>
           </div>
         </div>
 
-        <!-- RedHat -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">Red Hat</span>
-              <span class="timeline-period">Jun 2025 – Aug 2025 · 3 mos</span>
+        <!-- Red Hat -->
+        <div class="k8s-card" data-delay="200">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">red-hat</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status completed"><span class="k8s-status-dot"></span>Completed</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">Sr. DevOps Engineer</span>
             </div>
-            <h3 class="timeline-role">Sr. DevOps Engineer</h3>
-            <span class="timeline-location">📍 India</span>
-            <ul class="timeline-bullets">
-              <li>Designed automated workflows to provision and manage Azure infrastructure using <strong>Terraform</strong>, including AKS clusters, control planes, and node pools.</li>
-              <li>Developed <strong>Terraform modules</strong> for VNets, Subnets, Key Vaults, PostgreSQL, and other platform services.</li>
-              <li>Integrated <strong>Fortify SAST, SonarQube DAST, Trivy, and Mend (SCA)</strong> for automated vulnerability detection in CI/CD.</li>
-              <li>Managed and secured Terraform backend and state files per DevSecOps best practices.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Terraform</span><span>DevSecOps</span><span>Fortify</span><span>SonarQube</span><span>Trivy</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">Red Hat</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">Jun 2025 – Aug 2025 · 3 mos</span>
             </div>
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="Terraform for AKS provisioning"><span class="pod-dot"></span>terraform-iac</div>
+              <div class="k8s-pod running" title="Fortify SAST, SonarQube, Trivy, Mend"><span class="pod-dot"></span>devsecops-gates</div>
+              <div class="k8s-pod running" title="AKS control plane and node pool management"><span class="pod-dot"></span>aks-nodepool</div>
+              <div class="k8s-pod running" title="Terraform state & backend security"><span class="pod-dot"></span>state-management</div>
+            </div>
+            <div class="k8s-graph-row">
+              <div class="k8s-graph-label">Impact</div>
+              <div class="k8s-sparkline">
+                <div class="sp-bar" style="--h:70%"></div>
+                <div class="sp-bar" style="--h:80%"></div>
+                <div class="sp-bar" style="--h:88%"></div>
+                <div class="sp-bar accent" style="--h:92%"></div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>Terraform</span><span>DevSecOps</span><span>Fortify</span><span>SonarQube</span><span>Trivy</span></div>
           </div>
         </div>
 
         <!-- Cognizant DevSecOps -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">Cognizant</span>
-              <span class="timeline-period">May 2021 – Apr 2025 · 4 yrs</span>
+        <div class="k8s-card highlight-card" data-delay="300">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">cognizant-devsecops</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status completed"><span class="k8s-status-dot"></span>Completed</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">DevSecOps Engineer</span>
             </div>
-            <h3 class="timeline-role">DevSecOps Engineer</h3>
-            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
-            <ul class="timeline-bullets">
-              <li>Implemented fully automated Dev, Staging, and Production environments with weekly/monthly UAT &amp; PROD deployments.</li>
-              <li><strong>Reduced release time from 3 months to 7 days</strong> by improving DevOps collaboration and pipeline automation.</li>
-              <li>Created CI/CD pipelines from scratch using YAML with stages for building, testing, and deploying applications.</li>
-              <li>Implemented Azure Monitor, Log Analytics, and Application Insights for comprehensive monitoring.</li>
-              <li>Managed and maintained <strong>AKS clusters</strong>; monitored with Prometheus and Grafana.</li>
-              <li>Created Function App infrastructure using Terraform and deployed across all environments adhering to DevSecOps principles.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Azure DevOps</span><span>AKS</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">Cognizant</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">Kolkata, India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">May 2021 – Apr 2025 · 4 yrs</span>
             </div>
+            <!-- Prometheus alert highlight -->
+            <div class="prom-alert">
+              <span class="prom-alert-icon">🔥</span>
+              <span>release_cycle_days dropped from <strong>90 → 7</strong> · 90% reduction</span>
+            </div>
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="AKS cluster management"><span class="pod-dot"></span>aks-cluster</div>
+              <div class="k8s-pod running" title="Prometheus + Grafana monitoring"><span class="pod-dot"></span>prometheus-grafana</div>
+              <div class="k8s-pod running" title="YAML-based CI/CD pipelines"><span class="pod-dot"></span>cicd-yaml</div>
+              <div class="k8s-pod running" title="Azure Monitor, Log Analytics, App Insights"><span class="pod-dot"></span>azure-monitor</div>
+              <div class="k8s-pod running" title="Terraform Function App infra"><span class="pod-dot"></span>terraform-infra</div>
+            </div>
+            <!-- Grafana-style dual metric chart -->
+            <div class="grafana-panel">
+              <div class="gp-header">
+                <span class="gp-title">release_velocity{env="prod"}</span>
+                <span class="gp-badge">▲ 92%</span>
+              </div>
+              <div class="gp-chart">
+                <div class="gp-bar-wrap">
+                  <div class="gp-bar-bg"><div class="gp-bar-fill" style="--w:11%"></div></div>
+                  <span class="gp-bar-label">Before</span>
+                  <span class="gp-bar-val">3 months</span>
+                </div>
+                <div class="gp-bar-wrap">
+                  <div class="gp-bar-bg"><div class="gp-bar-fill accent" style="--w:100%"></div></div>
+                  <span class="gp-bar-label">After</span>
+                  <span class="gp-bar-val">7 days</span>
+                </div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>Azure DevOps</span><span>AKS</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span></div>
           </div>
         </div>
 
         <!-- Cognizant Cyber Security -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">Cognizant</span>
-              <span class="timeline-period">Jan 2019 – Apr 2021 · 2 yrs 4 mos</span>
+        <div class="k8s-card" data-delay="400">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">cognizant-security</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status completed"><span class="k8s-status-dot"></span>Completed</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">Cyber Security Consultant</span>
             </div>
-            <h3 class="timeline-role">Cyber Security Consultant</h3>
-            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
-            <ul class="timeline-bullets">
-              <li>Managed IAM operations including application patching, upgrades, and certificate management for enterprise clients.</li>
-              <li>Managed <strong>PAM account creation</strong>, access provisioning, access control, and user onboarding/termination.</li>
-              <li>Led a team of <strong>17 members</strong> ensuring smooth shift operations and service delivery.</li>
-              <li>Utilized SNOW dashboards to generate SDC and SLA reports; ensured SLA compliance with cross-functional teams.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>IAM</span><span>CyberArk PAM</span><span>SNOW</span><span>Security</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">Cognizant</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">Kolkata, India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">Jan 2019 – Apr 2021 · 2 yrs 4 mos</span>
             </div>
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="IAM operations, patching, cert management"><span class="pod-dot"></span>iam-operations</div>
+              <div class="k8s-pod running" title="CyberArk PAM account management"><span class="pod-dot"></span>cyberark-pam</div>
+              <div class="k8s-pod running" title="Led a team of 17 members"><span class="pod-dot"></span>team-lead-17</div>
+              <div class="k8s-pod running" title="SNOW dashboards, SLA compliance"><span class="pod-dot"></span>snow-reporting</div>
+            </div>
+            <div class="k8s-graph-row">
+              <div class="k8s-graph-label">Impact</div>
+              <div class="k8s-sparkline">
+                <div class="sp-bar" style="--h:50%"></div>
+                <div class="sp-bar" style="--h:65%"></div>
+                <div class="sp-bar" style="--h:72%"></div>
+                <div class="sp-bar" style="--h:80%"></div>
+                <div class="sp-bar accent" style="--h:85%"></div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>IAM</span><span>CyberArk PAM</span><span>SNOW</span><span>Security</span></div>
           </div>
         </div>
 
-        <!-- Cognizant PA + Trainee -->
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-company">Cognizant</span>
-              <span class="timeline-period">Nov 2017 – Jun 2019 · 1 yr 8 mos</span>
+        <!-- Cognizant PA Trainee -->
+        <div class="k8s-card" data-delay="500">
+          <div class="k8s-card-header">
+            <div class="k8s-ns-badge">namespace</div>
+            <span class="k8s-ns-name">cognizant-foundation</span>
+            <span class="k8s-flex"></span>
+            <span class="k8s-status completed"><span class="k8s-status-dot"></span>Completed</span>
+          </div>
+          <div class="k8s-card-body">
+            <div class="k8s-role-row">
+              <span class="k8s-kind">role:</span>
+              <span class="k8s-role-title">Programmer Analyst (Trainee → Analyst)</span>
             </div>
-            <h3 class="timeline-role">Programmer Analyst (Trainee → Analyst)</h3>
-            <span class="timeline-location">📍 Kolkata, West Bengal, India</span>
-            <ul class="timeline-bullets">
-              <li>Started career as Programmer Analyst Trainee (Nov 2017) progressing to Programming Analyst (Nov 2018).</li>
-              <li>Gained foundational skills in programming, system configuration, and enterprise IT operations.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Programming</span><span>IT Operations</span>
+            <div class="k8s-meta-row">
+              <span class="k8s-label">org:</span><span class="k8s-val">Cognizant</span>
+              <span class="k8s-label">location:</span><span class="k8s-val">Kolkata, India</span>
+              <span class="k8s-label">age:</span><span class="k8s-val">Nov 2017 – Jun 2019 · 1 yr 8 mos</span>
             </div>
+            <div class="k8s-pods-label">pods (responsibilities)</div>
+            <div class="k8s-pods">
+              <div class="k8s-pod running" title="Programming fundamentals"><span class="pod-dot"></span>programming-core</div>
+              <div class="k8s-pod running" title="Enterprise IT operations"><span class="pod-dot"></span>it-operations</div>
+              <div class="k8s-pod running" title="System configuration"><span class="pod-dot"></span>sys-config</div>
+            </div>
+            <div class="k8s-graph-row">
+              <div class="k8s-graph-label">Growth</div>
+              <div class="k8s-sparkline">
+                <div class="sp-bar" style="--h:20%"></div>
+                <div class="sp-bar" style="--h:35%"></div>
+                <div class="sp-bar" style="--h:50%"></div>
+                <div class="sp-bar accent" style="--h:65%"></div>
+              </div>
+            </div>
+            <div class="k8s-tags"><span>Programming</span><span>IT Operations</span></div>
           </div>
         </div>
 
-      </div>
+      </div><!-- /k8s-grid -->
     </div>
   </section>
 
@@ -589,6 +744,14 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
+      <div class="visitor-counter">
+        <span class="vc-icon">👁</span>
+        <span class="vc-label">Visitors</span>
+        <span class="vc-count" id="visitorCount">
+          <span class="vc-loading">…</span>
+        </span>
+        <span class="vc-live"><span class="vc-live-dot"></span>live</span>
+      </div>
       <p>Designed &amp; built with ❤ by <strong>Akhil Mishra</strong></p>
       <p class="footer-sub">© 2026 · All rights reserved</p>
     </div>

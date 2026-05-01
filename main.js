@@ -293,6 +293,12 @@ const io = new IntersectionObserver((entries) => {
     // Edu card
     if (el.classList.contains("edu-card")) el.classList.add("visible");
 
+    // K8s experience cards
+    if (el.classList.contains("k8s-card")) {
+      const delay = parseInt(el.dataset.delay || 0, 10);
+      setTimeout(() => el.classList.add("visible"), delay);
+    }
+
     // Counters
     if (el.classList.contains("stat-number")) animateCounter(el);
 
@@ -301,8 +307,36 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll(
-  ".pl-stage, .timeline-item, .cert-card, .edu-card, .stat-number"
+  ".pl-stage, .timeline-item, .cert-card, .edu-card, .stat-number, .k8s-card"
 ).forEach(el => io.observe(el));
+
+// ==================== VISITOR COUNTER ====================
+(function initVisitorCounter() {
+  const countEl = document.getElementById("visitorCount");
+  if (!countEl) return;
+
+  // countapi.dev — free, no auth, persistent counter per namespace+key
+  const namespace = "i-am-akhilmishra.github.io";
+  const key       = "portfolio-visits-v1";
+
+  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+    .then(r => r.json())
+    .then(data => {
+      const val = data.value || 0;
+      countEl.innerHTML = "";
+      // Animate count up
+      let cur = Math.max(0, val - 50);
+      const step = Math.ceil((val - cur) / 40);
+      const timer = setInterval(() => {
+        cur = Math.min(cur + step, val);
+        countEl.textContent = cur.toLocaleString();
+        if (cur >= val) clearInterval(timer);
+      }, 30);
+    })
+    .catch(() => {
+      countEl.textContent = "—";
+    });
+})();
 
 // ==================== SMOOTH SECTION HIGHLIGHT (NAV) ====================
 const sections = document.querySelectorAll("section[id]");
