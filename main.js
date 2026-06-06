@@ -81,6 +81,8 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
     { label: "Istio",      color: "#466BB0", size: 14 },
     { label: "ArgoCD",     color: "#EF7B4D", size: 14 },
     { label: "AWS",        color: "#FF9900", size: 18 },
+    { label: "EKS",        color: "#FF9900", size: 16 },
+    { label: "Lambda",     color: "#FF9900", size: 14 },
     { label: "Ansible",    color: "#cc1100", size: 14 },
   ];
 
@@ -232,11 +234,12 @@ mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => 
   const el = document.getElementById("typewriter");
   if (!el) return;
   const words = [
+    "Senior AWS DevOps Engineer",
     "Lead DevOps Engineer",
     "CI/CD Pipeline Architect",
-    "Kubernetes Orchestrator",
+    "Kubernetes & EKS Specialist",
     "Azure Cloud Expert",
-    "Terraform IaC Specialist",
+    "Terraform IaC Architect",
     "DevSecOps Practitioner",
   ];
   let wi = 0, ci = 0, deleting = false;
